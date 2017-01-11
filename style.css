@@ -1,0 +1,121 @@
+/* developer:Hausen version:1.0.0 */
+
+/*reset*/
+body,h1,h2,h3,ul,p{margin: 0;padding: 0;}
+body{font: 18px/1.5 'Microsoft YaHei','Arial';}
+a{color: #000;text-decoration: none;}
+img{border: none;}
+li{list-style: none;}
+video,object{display: block;}
+
+/*common*/
+.fl{float: left;}
+.fr{float: right;}
+.clearfix{zoom: 1;} 
+.clearfix:after{display: block;clear: both;content: "";visibility: hidden;height: 0;} 
+.body-box{margin-top: 30px;}
+
+/*header*/
+.header{
+	text-align: center;
+	padding: 30px;
+	background-color: #FFDAB9;
+}
+
+/*issue video*/
+.issue-video{
+	margin: 0 auto;
+	font-size: 20px;
+	text-align: center;
+}
+.issue-video input{
+	width: 600px;
+	height: 30px;
+	font-size: 20px;
+}
+
+/*enter data*/
+.enter-target,
+.enter-detail{
+	margin: 0 auto;
+	font-size: 20px;
+	text-align: center;
+}
+.enter-target td,
+.enter-detail td{
+	border: 1px solid #000;
+}
+.enter-target select,
+.enter-target input{
+	width: 200px;
+	font-size: 20px;
+}
+.enter-detail{
+	font-size: 16px;
+	margin-top: 30px;
+}
+.enter-detail input{
+	width: 120px;
+	font-size: 20px;
+}
+
+/*video detail*/
+.video-detail{
+	text-align: center;
+}
+.video-detail select{
+	width: 500px;
+	height: 50px;
+	font-size: 16px;
+}
+.video-detail input{
+	height: 50px;
+	width: 100px;
+}
+
+/*video detail result*/
+.video-detail-result{
+	margin: 0 auto;
+	text-align: center;
+}
+.video-detail-result td{
+	border: 1px solid #000;
+}
+.video-detail-result-mx{
+	padding: 0;
+	vertical-align: bottom;
+}
+.video-detail-result-hd td{
+	background-color: #FFF8DC;
+}
+
+/*count platform*/
+.count-platform{
+	margin: 0 auto;
+	text-align: center;
+}
+.count-platform span{
+	font-size: 50px;
+}
+.count-platform td{
+	border: 1px solid #000;
+	width: 130px;
+}
+.count-platform-head td{
+	background-color: #FFF8DC;
+	font-weight: bold;
+}
+
+/*count content*/
+.count-content{
+	margin: 0 auto;
+	text-align: center;
+	font-size: 16px;
+}
+.count-content td{
+	border: 1px solid #000;
+}
+.count-content-head td{
+	background-color: #FFF8DC;
+	font-weight: bold;
+}
