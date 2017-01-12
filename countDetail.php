@@ -17,7 +17,7 @@
 
 	function query_detail($dblink,$table,$video_id)
 	{
-		$sql = 'select * from '.$table.' where video_id=? ORDER BY enter_time desc,id desc limit 0,15';
+		$sql = 'select * from '.$table.' where video_id=? ORDER BY enter_time desc,id desc limit 0,10';
 		$stmt = $dblink->prepare($sql);
 		$stmt->execute(array($video_id));
 		return $stmt->fetchAll(PDO::FETCH_ASSOC);
