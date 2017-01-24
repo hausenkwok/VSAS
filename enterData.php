@@ -68,7 +68,7 @@
 					<td><?php echo $row['title']; ?></td>
 					<td><?php echo $row['weibo']; ?></td>
 					<td>
-						<input type="text" name="total[]" value="0">
+						<input type="text" name="total[]" value="<?php echo $row['weibo']; ?>">
 						<input type="hidden" name="id[]" value="<?php echo $row['id']; ?>">
 					</td>
 				</tr>
@@ -83,6 +83,7 @@
 		</form>
 	</div>
 	<script type="text/javascript">
+	console.log(document.documentElement.clientWidth);
 		window.onload = function()
 		{
 			var tj = document.getElementById("tijiao");
@@ -121,7 +122,10 @@
 						default:return false;
 					}
 					tdlist[flag].firstChild.nodeValue = amount;
+					// console.log(tdlist[flag+1].children[0].value);
+					tdlist[flag+1].children[0].value = amount;
 					flag = flag+4;
+
 				}
 			}
 		}

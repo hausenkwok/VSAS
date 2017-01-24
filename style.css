@@ -83,7 +83,7 @@ video,object{display: block;}
 }
 .video-detail-result-mx{
 	padding: 0;
-	vertical-align: bottom;
+	vertical-align: top;
 }
 .video-detail-result-hd td{
 	background-color: #FFF8DC;

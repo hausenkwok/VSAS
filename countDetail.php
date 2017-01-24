@@ -121,7 +121,7 @@
 			</tr>
 			<tr>
 				<td class="video-detail-result-mx">
-					<table cellspacing="0" cellpadding="3">
+					<table cellspacing="0" cellpadding="3" class="detail-mx">
 						<tr class="video-detail-result-hd">
 							<td>日期</td><td>总数</td><td>增数</td>
 						</tr>
@@ -138,7 +138,7 @@
 					</table>
 				</td>
 				<td class="video-detail-result-mx">
-					<table cellspacing="0" cellpadding="3">
+					<table cellspacing="0" cellpadding="3" class="detail-mx">
 						<tr class="video-detail-result-hd">
 							<td>日期</td><td>总数</td><td>增数</td>
 						</tr>
@@ -155,7 +155,7 @@
 					</table>
 				</td>
 				<td class="video-detail-result-mx">
-					<table cellspacing="0" cellpadding="3">
+					<table cellspacing="0" cellpadding="3" class="detail-mx">
 						<tr class="video-detail-result-hd">
 							<td>日期</td><td>总数</td><td>增数</td>
 						</tr>
@@ -172,7 +172,7 @@
 					</table>
 				</td>
 				<td class="video-detail-result-mx">
-					<table cellspacing="0" cellpadding="3">
+					<table cellspacing="0" cellpadding="3" class="detail-mx">
 						<tr class="video-detail-result-hd">
 							<td>日期</td><td>总数</td><td>增数</td>
 						</tr>
@@ -189,7 +189,7 @@
 					</table>
 				</td>
 				<td class="video-detail-result-mx">
-					<table cellspacing="0" cellpadding="3">
+					<table cellspacing="0" cellpadding="3" class="detail-mx">
 						<tr class="video-detail-result-hd">
 							<td>日期</td><td>总数</td><td>增数</td>
 						</tr>
@@ -206,7 +206,7 @@
 					</table>
 				</td>
 				<td class="video-detail-result-mx">
-					<table cellspacing="0" cellpadding="3">
+					<table cellspacing="0" cellpadding="3" class="detail-mx">
 						<tr class="video-detail-result-hd">
 							<td>日期</td><td>总数</td><td>增数</td>
 						</tr>
@@ -223,7 +223,7 @@
 					</table>
 				</td>
 				<td class="video-detail-result-mx">
-					<table cellspacing="0" cellpadding="3">
+					<table cellspacing="0" cellpadding="3" class="detail-mx">
 						<tr class="video-detail-result-hd">
 							<td>日期</td><td>总数</td><td>增数</td>
 						</tr>
@@ -240,7 +240,7 @@
 					</table>
 				</td>
 				<td class="video-detail-result-mx">
-					<table cellspacing="0" cellpadding="3">
+					<table cellspacing="0" cellpadding="3" class="detail-mx">
 						<tr class="video-detail-result-hd">
 							<td>日期</td><td>总数</td><td>增数</td>
 						</tr>
@@ -257,7 +257,7 @@
 					</table>
 				</td>
 				<td class="video-detail-result-mx">
-					<table cellspacing="0" cellpadding="3">
+					<table cellspacing="0" cellpadding="3" class="detail-mx">
 						<tr class="video-detail-result-hd">
 							<td>日期</td><td>总数</td><td>增数</td>
 						</tr>
@@ -274,7 +274,7 @@
 					</table>
 				</td>
 				<td class="video-detail-result-mx">
-					<table cellspacing="0" cellpadding="3">
+					<table cellspacing="0" cellpadding="3" class="detail-mx">
 						<tr class="video-detail-result-hd">
 							<td>日期</td><td>总数</td><td>增数</td>
 						</tr>
@@ -294,5 +294,20 @@
 		</table>
 		<p style="text-align: center;margin-top: 20px;">程序运行统计所耗时间：<?php echo round($time,6);?>秒</p>
 	</div>
+	<script type="text/javascript">
+		window.onload = function()
+		{
+			if(document.getElementsByClassName)
+			{
+				var cn = document.getElementsByClassName('detail-mx');
+				for(var i=0,flag=cn.length;i<flag;i++)
+				{
+					var trlist = cn[i].getElementsByTagName('tr');
+					if(trlist.length == 1) continue;
+					trlist[1].children[2].style.backgroundColor="#ffcc00";
+				}
+			}
+		}
+	</script>
 </body>
 </html>
